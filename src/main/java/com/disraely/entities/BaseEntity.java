@@ -3,7 +3,7 @@ package com.disraely.entities;
 import java.io.Serializable;
 import java.util.Date;
 
-public abstract class BaseEntity implements Serializable {
+public abstract class BaseEntity {
     private Long id;
     private Date createDate;
     private Date updateDate;
