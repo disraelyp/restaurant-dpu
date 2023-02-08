@@ -1,11 +1,14 @@
 package com.disraely.entities;
 
+import com.disraely.enums.EntityStatus;
+
 import java.time.Instant;
 
 public abstract class BaseEntity {
     private Long id;
     private Instant createDate;
     private Instant updateDate;
+    private EntityStatus status;
 
     public BaseEntity() {}
 
@@ -31,5 +34,13 @@ public abstract class BaseEntity {
 
     public void setUpdateDate(Instant updateDate) {
         this.updateDate = updateDate;
+    }
+
+    public EntityStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(EntityStatus status) {
+        this.status = status;
     }
 }
