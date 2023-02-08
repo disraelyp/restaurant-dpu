@@ -1,12 +1,11 @@
 package com.disraely.entities;
 
-import java.io.Serializable;
-import java.util.Date;
+import java.time.Instant;
 
 public abstract class BaseEntity {
     private Long id;
-    private Date createDate;
-    private Date updateDate;
+    private Instant createDate;
+    private Instant updateDate;
 
     public BaseEntity() {}
 
@@ -18,19 +17,19 @@ public abstract class BaseEntity {
         this.id = id;
     }
 
-    public Date getCreateDate() {
+    public Instant getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(Date createDate) {
+    public void setCreateDate(Instant createDate) {
         this.createDate = createDate;
     }
 
-    public Date getUpdateDate() {
+    public Instant getUpdateDate() {
         return updateDate;
     }
 
-    public void setUpdateDate(Date updateDate) {
+    public void setUpdateDate(Instant updateDate) {
         this.updateDate = updateDate;
     }
 }
