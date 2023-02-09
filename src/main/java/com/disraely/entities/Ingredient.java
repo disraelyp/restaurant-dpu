@@ -2,10 +2,13 @@ package com.disraely.entities;
 
 import com.disraely.enums.MeasureUnit;
 
+import java.util.List;
+
 public class Ingredient extends BaseEntity {
     private String name;
     private Double cost;
     private MeasureUnit measureUnit;
+    private List<StockIngredient> stockIngredients;
 
     public Ingredient() {
         super();
@@ -27,11 +30,19 @@ public class Ingredient extends BaseEntity {
         this.cost = cost;
     }
 
-    public MeasureUnit getMeasurementUnits() {
+    public MeasureUnit getMeasureUnit() {
         return measureUnit;
     }
 
-    public void setMeasurementUnits(MeasureUnit measurementUnits) {
-        this.measureUnit = measurementUnits;
+    public void setMeasureUnit(MeasureUnit measureUnit) {
+        this.measureUnit = measureUnit;
+    }
+
+    public List<StockIngredient> getStockIngredients() {
+        return stockIngredients;
+    }
+
+    public void setStockIngredients(List<StockIngredient> stockIngredients) {
+        this.stockIngredients = stockIngredients;
     }
 }
