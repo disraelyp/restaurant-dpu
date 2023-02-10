@@ -9,6 +9,7 @@ public class Ingredient extends BaseEntity {
     private Double cost;
     private MeasureUnit measureUnit;
     private List<StockIngredient> stockIngredients;
+    private List<ProductIngredient> productIngredients;
 
     public Ingredient() {
         super();
@@ -44,5 +45,13 @@ public class Ingredient extends BaseEntity {
 
     public void setStockIngredients(List<StockIngredient> stockIngredients) {
         this.stockIngredients = stockIngredients;
+    }
+
+    public List<ProductIngredient> getProductIngredients() {
+        return productIngredients;
+    }
+
+    public void setProductIngredients(List<ProductIngredient> productIngredients) {
+        this.productIngredients = productIngredients;
     }
 }
