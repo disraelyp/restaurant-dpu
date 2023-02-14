@@ -1,6 +1,6 @@
 package com.disraely.entities;
 
-public abstract class BaseEmployee extends BaseEntity {
+public abstract class BaseEmployee extends BasePerson {
     private int level;
 
     public BaseEmployee() {
