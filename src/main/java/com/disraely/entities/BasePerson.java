@@ -1,13 +1,13 @@
 package com.disraely.entities;
 
-public abstract class Person extends BaseEntity {
+public abstract class BasePerson extends BaseEntity {
     private String name;
     private String lastName;
     private String identification;
     private String phone;
     private String address;
 
-    public Person() {
+    public BasePerson() {
         super();
     }
 
