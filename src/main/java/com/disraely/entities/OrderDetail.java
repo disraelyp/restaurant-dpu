@@ -7,7 +7,7 @@ public class OrderDetail extends BaseEntity {
     private Double price;
     private Chef chef;
     private Order order;
-    private Product product;
+    private OrderDetailProduct orderDetailProduct;
     private List<OrderDetailTax> orderDetailTaxList;
 
     public OrderDetail() {
@@ -45,19 +45,19 @@ public class OrderDetail extends BaseEntity {
         this.order = order;
     }
 
-    public Product getProduct() {
-        return product;
-    }
-
-    public void setProduct(Product product) {
-        this.product = product;
-    }
-
     public List<OrderDetailTax> getOrderDetailTaxList() {
         return orderDetailTaxList;
     }
 
     public void setOrderDetailTaxList(List<OrderDetailTax> orderDetailTaxList) {
         this.orderDetailTaxList = orderDetailTaxList;
+    }
+
+    public OrderDetailProduct getOrderDetailProduct() {
+        return orderDetailProduct;
+    }
+
+    public void setOrderDetailProduct(OrderDetailProduct orderDetailProduct) {
+        this.orderDetailProduct = orderDetailProduct;
     }
 }
