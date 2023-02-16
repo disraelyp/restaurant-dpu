@@ -10,6 +10,7 @@ public class Product extends BaseEntity {
     private Double price;
     private ProductCategory category;
     private List<ProductIngredient> productIngredientList;
+    private List<OrderDetail> orderDetailList;
 
     public Product() {
         super();
@@ -53,5 +54,13 @@ public class Product extends BaseEntity {
 
     public void setProductIngredientList(List<ProductIngredient> productIngredientList) {
         this.productIngredientList = productIngredientList;
+    }
+
+    public List<OrderDetail> getOrderDetailList() {
+        return orderDetailList;
+    }
+
+    public void setOrderDetailList(List<OrderDetail> orderDetailList) {
+        this.orderDetailList = orderDetailList;
     }
 }
