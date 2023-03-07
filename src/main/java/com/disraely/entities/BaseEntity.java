@@ -10,7 +10,8 @@ public abstract class BaseEntity {
     private Instant updateDate;
     private EntityStatus status;
 
-    public BaseEntity() {}
+    public BaseEntity() {
+    }
 
     public Long getId() {
         return id;

@@ -4,7 +4,7 @@ import com.disraely.enums.OrderStatus;
 
 import java.util.List;
 
-public class Order extends BaseEntity{
+public class Order extends BaseEntity {
     private Double total;
     private OrderStatus orderStatus;
     private Client client;
