@@ -1,18 +1,15 @@
 package com.disraely.entities;
 
 import com.disraely.enums.ProductCategory;
-import java.util.List;
 
-public class Product extends BaseEntity {
+public class OrderDetailProduct extends BaseEntity {
   private String name;
   private String description;
   private Double price;
   private ProductCategory category;
-  private List<ProductIngredient> productIngredientList;
-  private List<OrderDetailProduct> orderDetailProductList;
+  private Product product;
 
-  public Product() {
-    super();
+  public OrderDetailProduct() {
   }
 
   public String getName() {
@@ -47,19 +44,11 @@ public class Product extends BaseEntity {
     this.category = category;
   }
 
-  public List<ProductIngredient> getProductIngredientList() {
-    return productIngredientList;
+  public Product getProduct() {
+    return product;
   }
 
-  public void setProductIngredientList(List<ProductIngredient> productIngredientList) {
-    this.productIngredientList = productIngredientList;
-  }
-
-  public List<OrderDetailProduct> getOrderDetailProductList() {
-    return orderDetailProductList;
-  }
-
-  public void setOrderDetailProductList(List<OrderDetailProduct> orderDetailProductList) {
-    this.orderDetailProductList = orderDetailProductList;
+  public void setProduct(Product product) {
+    this.product = product;
   }
 }
