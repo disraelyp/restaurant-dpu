@@ -1,8 +1,8 @@
 package com.disraely.enums;
 
 public enum OrderStatus {
-    PLACED,
-    PREPARED,
-    DELIVERED,
-    FINISHED,
+  PLACED,
+  PREPARED,
+  DELIVERED,
+  FINISHED,
 }
