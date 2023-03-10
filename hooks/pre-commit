@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Stash any changes that are not staged
+git stash -q --keep-index
+
+# Running maven checkstyle and spotless
+mvn checkstyle:check spotless:apply
+
+if [ $? -ne 0 ]; then
+  # Restore any stashed changes
+  git stash pop -q
+  exit 1
+fi
+
+# Restore any stashed changes
+git stash pop -q
