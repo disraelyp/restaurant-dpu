@@ -1,7 +1,7 @@
 package com.disraely.entities;
 
 public class Waiter extends BaseEmployee {
-    public Waiter() {
-        super();
-    }
+  public Waiter() {
+    super();
+  }
 }
