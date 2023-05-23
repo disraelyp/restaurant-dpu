@@ -9,4 +9,6 @@
               files=".*\.java"/>
     <suppress checks="MissingJavadocMethod"
               files=".*\.java"/>
+    <suppress checks="AbbreviationAsWordInName"
+              files=".*\.java"/>
 </suppressions>
